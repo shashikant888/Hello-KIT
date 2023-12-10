@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/txtProveYourself"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prove yourself..."
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorOnPrimary" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/txtCredentials"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/colorOnPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorOnPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="!!   Enter your Credentials   !!"
+                android:textColor="#ED0B0B"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCredentials"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="90dp"
+        android:hint="Enter your User ID"
+        android:textColor="@color/colorOnPrimary"
+        android:textSize="16sp"
+        android:maxLength="12"
+        android:inputType="number"
+        android:textColorHint="@color/colorOnPrimary"
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Password"
+        android:layout_below="@id/txtCredentials"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorOnPrimary"
+        android:maxLength="30"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorOnPrimary"
+        />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCredentials"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:text="Login"
+        android:background="@drawable/main_activity_bg"
+        android:textColor="@color/colorOnSecondary"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="@color/colorOnPrimary"
+        android:text="forgot password ?"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:layout_marginTop="16dp"
+         />
+
+    <ImageView
+        android:id="@+id/imgKGI"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_kgi"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
